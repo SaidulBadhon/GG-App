@@ -12,18 +12,23 @@ import Link from '@material-ui/core/Link';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
 
+import Typography from '@material-ui/core/Typography';
+
+
 class Register extends Component {
 
     render (){
         return (
         
             <div className="base-container">
-                <div className="header">Register</div>
                 <div className="content">
                     <div className = "image">
                         <img src={loginImg} />
                     </div>
-
+                    <br></br>
+                    <Typography className="FormHeader" component="h2" variant="h5">
+                    Register
+                    </Typography>
                     <form>
                     <div className="form-group">
                         <div className="form-group-object-left">

@@ -19,11 +19,10 @@
     align-items: center;
 }
 .content .image {
-    width: 21em;
+    width: 30em;
 }
 .content .image img {
     width: 100%;
-    
 }
 
 form {

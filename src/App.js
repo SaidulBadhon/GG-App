@@ -15,7 +15,7 @@ import LogIn from "./Pages/Login/Login.js"
 import Blog from "./Pages/Blog.js";
 import About from "./Pages/About.js";
 
-export default class extends Component {
+class App extends Component {
   render(){
     return (
       <Fragment>
@@ -37,3 +37,4 @@ export default class extends Component {
     )
   }
 }
+export default App

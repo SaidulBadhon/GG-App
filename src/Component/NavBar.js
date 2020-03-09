@@ -16,6 +16,8 @@ function NavBar(propos) {
 
     function handleChange (event, newValue) {
 
+        console.log("PROPOSSSSS :::::     " , propos)
+
         setValue(newValue);
         console.log("handleChange", newValue)
 /*
@@ -53,25 +55,26 @@ function NavBar(propos) {
         <Router>
             <Paper>
                 <Tabs
-                value={value}
-                onChange={handleChange}
-                indicatorColor="primary"
-                textColor="primary"
-                centered
-                >
-                {console.log(value)}
-                <Tab label="Home"  component={Link} to={"/"}/>
+                    value={value}
+                    onChange={handleChange}
+                    indicatorColor="primary"
+                    textColor="primary"
+                    centered
+                    >
+                    {console.log(value)}
+                    
+                    <Tab label="Home"  component={Link} to={"/"}/>
 
-                <Tab label="Blog" component={Link} to={"/Blog"}/>
-
-
-                <Tab label="About" component={Link} to={"/About"}/>  
-            
-                <Tab label="Log In" component={Link} to={"/LogIn"}/>
-                <Tab label="Sign Up" component={Link} to={"/SingUp"}/>
+                    <Tab label="Blog" component={Link} to={"/Blog"}/>
 
 
-                {/* propos.auth ?<Tab label="LogIn" /><Tab label="Logout" /> */}
+                    <Tab label="About" component={Link} to={"/About"}/>  
+                
+                    <Tab label="Log In" component={Link} to={"/LogIn"}/>
+                    <Tab label="Sign Up" component={Link} to={"/SingUp"}/>
+
+
+                    {/* propos.auth ?<Tab label="LogIn" /><Tab label="Logout" /> */}
                 
                 </Tabs>
             </Paper>

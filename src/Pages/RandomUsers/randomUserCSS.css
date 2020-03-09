@@ -1,0 +1,26 @@
+.RenderUserItems{
+    display: grid;
+    grid-template-columns: auto auto ;
+
+    padding: 10px 0px 10px 10px;
+
+}
+.CardBody{
+    padding-right: 50px;
+
+}
+.CardMain{
+    width: 99%;
+    height: 95%;
+}
+
+.CardMain .CardBody{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+
+}
+
+.PersonalData{
+    padding-right: 2;
+    padding-top: 7;
+}

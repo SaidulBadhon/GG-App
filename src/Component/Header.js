@@ -2,8 +2,7 @@ import "./Header.css"
 
 import React from 'react';
 
-import { AppBar , Toolbar,Typography,IconButton,Switch,FormControlLabel,FormGroup} from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
+import { AppBar , Toolbar,Typography,IconButton,Switch,FormControlLabel,FormGroup, makeStyles } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 
 import NavBar from "./NavBar"
@@ -31,14 +30,6 @@ export default function Header() {
 
   return (
     <div className={classes.root}>
-      <FormGroup>
-        { /*
-        <FormControlLabel
-          control={<Switch checked={auth} onChange={handleChange} aria-label="login switch" />}
-          label={auth ? 'Logout' : 'Login'}
-        />
-        */ }
-      </FormGroup>
       <AppBar position="static">
         <Toolbar>
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
@@ -48,7 +39,7 @@ export default function Header() {
           <Typography variant="h6" className={classes.title}>
             TechSecBD
           </Typography>
-          <NavBar  loginState />
+          <NavBar  auth/>
 
         </Toolbar>
       </AppBar>

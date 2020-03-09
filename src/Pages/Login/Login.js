@@ -18,10 +18,16 @@ import Typography from '@material-ui/core/Typography';
 
 class Login extends Component {
 
+    /*
+    componentDidMount(){
+        console.log("componentDidMount from Login")
+    }
+*/
+
     render (){
         return (
         
-            <div className="base-container">
+            <div className="base-container" ref={this.props.containerRef}>
 
 
                 <div className="content">
@@ -30,8 +36,8 @@ class Login extends Component {
                     </div>
                     <br></br>
                     <Typography className="FormHeader" component="h2" variant="h5">
-                    Sign in
-                </Typography>
+                        Sign in
+                    </Typography>
 
                     <form>
                         <TextField 
