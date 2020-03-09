@@ -6,11 +6,14 @@ import Footer from "./Component/Footer.js"
 
 import Home from "./Pages/Home.js"
 
-import LogIn from "./Pages/LogIn.js"
-import SingUp from "./Pages/SingUp.js"
+import GLogIn from "./Pages/NOT FOR USE LogIn.js"
+//import SingUp from "./Pages/SingUp.js"
 
-import Blog from "./Pages/Blog";
-import About from "./Pages/About";
+import SingUp from "./Pages/Login/Register.js"
+import LogIn from "./Pages/Login/Login.js"
+
+import Blog from "./Pages/Blog.js";
+import About from "./Pages/About.js";
 
 export default class extends Component {
   render(){
@@ -23,6 +26,7 @@ export default class extends Component {
                     <Route exact path="/Blog" component={Blog} />
                     <Route exact path="/About" component={About} />
                     <Route exact path="/LogIn" component={LogIn} />
+                    <Route exact path="/LogInGoogle" component={GLogIn} />
                     <Route exact path="/SingUp" component={SingUp} />
                     <Redirect to="404" />
                 </Switch>

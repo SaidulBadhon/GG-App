@@ -12,7 +12,7 @@ import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-
+import LockOutlinedIcon from "@material-ui/icons/LooksOutlined"
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
@@ -55,7 +55,7 @@ export default function SignIn() {
       <div className={classes.paper}>
         <Avatar className={classes.avatar}>
 
-         { /*<LockOutlinedIcon /> */ }
+         <LockOutlinedIcon /> 
         </Avatar>
         <Typography component="h1" variant="h5">
           Sign in
