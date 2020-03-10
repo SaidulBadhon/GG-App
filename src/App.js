@@ -39,7 +39,7 @@ class App extends Component {
                     <Route exact path="./RandomProjects/MemeGenerator" component={MemeGenerator} />
                     <Route exact path="./RandomProjects/NumberChanger" component={NumberChanger} />
                     <Route exact path="./RandomProjects/RandomUserFinder" component={RandomUserList} />
-                    <Redirect to="404" />
+                   {/* <Redirect to="404" />*/}
                 </Switch>
             </Router>
         <Footer />
