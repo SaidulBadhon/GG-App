@@ -30,15 +30,15 @@ class App extends Component {
               <Router>
                 <Switch>
                     <Route exact path="/" component={Home} />
-                    <Route exact path="/Blog" component={Blog} />
-                    <Route exact path="/About" component={About} />
-                    <Route exact path="/LogIn" component={LogIn} />
-                    <Route exact path="/LogInGoogle" component={GLogIn} />
-                    <Route exact path="/SingUp" component={SingUp} />
+                    <Route exact path="./Blog" component={Blog} />
+                    <Route exact path="./About" component={About} />
+                    <Route exact path="./LogIn" component={LogIn} />
+                    <Route exact path="./LogInGoogle" component={GLogIn} />
+                    <Route exact path="./SingUp" component={SingUp} />
 
-                    <Route exact path="/RandomProjects/MemeGenerator" component={MemeGenerator} />
-                    <Route exact path="/RandomProjects/NumberChanger" component={NumberChanger} />
-                    <Route exact path="/RandomProjects/RandomUserFinder" component={RandomUserList} />
+                    <Route exact path="./RandomProjects/MemeGenerator" component={MemeGenerator} />
+                    <Route exact path="./RandomProjects/NumberChanger" component={NumberChanger} />
+                    <Route exact path="./RandomProjects/RandomUserFinder" component={RandomUserList} />
                     <Redirect to="404" />
                 </Switch>
             </Router>

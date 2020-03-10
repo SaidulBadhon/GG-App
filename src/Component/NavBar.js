@@ -27,23 +27,23 @@ function NavBar() {
         }
 
         if(newValue === 1){
-            window.location.replace("/Blog");
+            window.location.replace("./Blog");
             windowID = newValue
 
 
         }
         if(newValue === 2){
-            window.location.replace("/About");
+            window.location.replace("./About");
             windowID = newValue
         }
 
         if(newValue === 3){
-            window.location.replace("/LogIn");
+            window.location.replace("./LogIn");
             windowID = newValue
         }
 
         if(newValue === 4){
-            window.location.replace("/SingUp");
+            window.location.replace("./SingUp");
             windowID = newValue
         }
 

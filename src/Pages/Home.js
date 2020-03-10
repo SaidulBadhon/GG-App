@@ -39,7 +39,7 @@ function Home() {
                     variant="h5"
                     fontSize={45}
                     >
-                  Meme Generator
+                  
               </Box >
             </div>
 
