@@ -20,7 +20,7 @@ function NavBar(propos) {
 
         setValue(newValue);
         console.log("handleChange", newValue)
-
+/*
         if(newValue === 0){
             window.location.replace("/");
             windowID = newValue
@@ -47,6 +47,7 @@ function NavBar(propos) {
             window.location.replace("/SingUp");
             windowID = newValue
         }
+        */
     }
 
 
