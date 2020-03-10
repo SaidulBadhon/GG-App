@@ -46,7 +46,7 @@ function NavBar() {
             window.location.replace("/SingUp");
             windowID = newValue
         }
-    
+
     }
 
     return (
