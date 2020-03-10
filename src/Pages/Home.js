@@ -35,7 +35,6 @@ function Home() {
 
               <Box  fontWeight="fontWeightMedium"
                     variant="h5"
-                    fontFamily="cursive"
                     fontSize={45}
                     >
                   Meme Generator
@@ -53,7 +52,6 @@ function Home() {
 
               <Box  fontWeight="fontWeightMedium"
                     variant="h5"
-                    fontFamily="cursive"
                     fontSize={38}
                     >
                     Random User Finder
@@ -70,7 +68,6 @@ function Home() {
 
               <Box  fontWeight="fontWeightMedium"
                     variant="h5"
-                    fontFamily="cursive"
                     fontSize={45}
                     >
                   Number Changer
@@ -86,7 +83,6 @@ function Home() {
 
               <Box  fontWeight="fontWeightMedium"
                     variant="h5"
-                    fontFamily="cursive"
                     fontSize={45}
                     >
 
