@@ -1,5 +1,7 @@
-import React, {Component, Fragment} from "react"
-import { Card, CardContent, CardMedia, Typography, Box } from "@material-ui/core"
+import React, { Fragment } from "react"
+//import { Card, CardContent, CardMedia, Typography, Box } from "@material-ui/core"
+
+import Box from "@material-ui/core/Box"
 
 import "./HomeCSS.css"
 
