@@ -56,7 +56,7 @@ function Home() {
                     variant="h5"
                     fontSize={38}
                     >
-                    Random User Finder
+                    
 
               </Box >
             </div>
