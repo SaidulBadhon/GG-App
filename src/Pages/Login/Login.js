@@ -26,7 +26,7 @@ class Login extends Component {
 
     render (){
         return (
-        
+
             <div className="base-container" ref={this.props.containerRef}>
 
 
@@ -40,7 +40,7 @@ class Login extends Component {
                     </Typography>
 
                     <form>
-                        <TextField 
+                        <TextField
                         variant="outlined"
                         margin="normal"
                         required
@@ -63,7 +63,7 @@ class Login extends Component {
                         autoComplete="current-password"/>
 
 
-                        <Button className="form-button"         
+                        <Button className="form-button"
                                 type="submit"
                                 fullWidth
                                 variant="contained"
@@ -74,7 +74,7 @@ class Login extends Component {
                 </div>
         </div>
         )
-        
+
     }
 }
 

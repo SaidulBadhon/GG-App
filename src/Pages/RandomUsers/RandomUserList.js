@@ -3,6 +3,9 @@ import UserItem from "./UserItem.js";
 import { getRandomUsers } from "./RandomUserAPI";
 import "./randomUserCSS.css"
 
+import { makeStyles } from '@material-ui/core/styles';
+import CircularProgress from '@material-ui/core/CircularProgress';
+
 
 export class RandomUserList extends Component {
 
@@ -36,7 +39,7 @@ export class RandomUserList extends Component {
           birthday={user.birthday}
 
           />
-          
+
       );
 
 
@@ -50,8 +53,11 @@ export class RandomUserList extends Component {
       //show loader
       return (
         <div>
-          <img src='../../../img/loading.gif'/>
+          <div className="LoadingBar">
+            <CircularProgress size="100" thickness="4.6" color="secondary" />
+          </div>
         </div>
+
       );
     }
     return (

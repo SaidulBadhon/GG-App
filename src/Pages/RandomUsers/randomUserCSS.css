@@ -5,6 +5,7 @@
     padding: 10px 0px 10px 10px;
 
 }
+
 .CardBody{
     padding-right: 50px;
 
@@ -20,7 +21,20 @@
 
 }
 
+
+.CardImage img{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+}
 .PersonalData{
     padding-right: 2;
     padding-top: 7;
+}
+
+.LoadingBar{
+  display: flexBox;
+  text-align: center;
+  vertical-align: center;
+  padding-top:5cm ;
+  height: 14cm;
 }

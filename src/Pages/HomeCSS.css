@@ -1,0 +1,85 @@
+
+
+.CardBackground{
+  display:grid;
+  grid-template-columns: auto auto auto auto;
+  width: 100%;
+/*  margin: 25px;*/
+  padding: 5px;
+  background-color: rad;
+
+  align-items: center;
+}
+
+.CardBody {
+/*  background-color: blue;*/
+  width: 75%;
+  margin: 25px;
+
+  /*  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+/*  background-color: blue;*/
+  position: relative;
+  display: inline-block; /* Make the width of box same as image */
+
+
+}
+
+.CardBody .HeadingText{
+
+  position: absolute;
+  z-index: 10;
+  margin-top: 30;
+  margin-left: 1;
+  left: 0;
+  right: 0;
+  top: 0%; /* Adjust this value to move the positioned div up and down */
+  text-align: center;
+  width: 98%; /* Set the width of the positioned div */
+
+  color: white;
+  text-shadow: 0 0 8px rgba(0, 0, 0, .5);
+
+}
+/*.CardBody .HeadingText Typography{
+  align-items: center;
+  background-color: rad;
+
+}*/
+
+.HomeCardImage{
+/*  background-color: green; */
+  width: 120%;
+}
+
+.HomeCardImage img{
+  width: 102%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*
+.CardImage img:hover{
+  width: 100%;
+}*/
+
+.CardBody{
+  transition: .25s;
+}
+.CardBody:hover{
+  transform: scale(1.03);
+
+}
+/*
+figure.BackgroundImageClass  {
+	-webkit-filter: blur(3px);
+	filter: blur(3px);
+    transform: scale(1.03);
+    width: 100%;
+
+}*/
+.CardRoot{
+  margin: 50px;
+
+}
+
+.CardImage{
+
+}

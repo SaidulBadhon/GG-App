@@ -1,18 +1,102 @@
-import React/*, {Component, Fragment}*/ from "react"
+import React, {Component, Fragment} from "react"
+import { Card, CardContent, CardMedia, Typography, Box } from "@material-ui/core"
+
+import "./HomeCSS.css"
 
 
-import MemeGenerator from "./Small Projects/MemeGenerator/MemeGenerator.js"
-import NumberChanger from "./Small Projects/NumberChanger.js"
-import RandomUserList from "./RandomUsers/RandomUserList.js"
-
+import Plate1 from "./img/HomeUI/Plate1.jpg"
+import Plate2 from "./img/HomeUI/Plate2.jpg"
+import Plate3 from "./img/HomeUI/Plate3.jpg"
+import Plate4 from "./img/HomeUI/Plate3.jpg"
 
 
 function Home() {
+  function handleClickForMemeGenerator() {
+      window.location.replace("/RandomProjects/MemeGenerator");
+  }
+
+  function handleClickForRandomUserFinder() {
+        window.location.replace("/RandomProjects/RandomUserFinder");
+    }
+
+      function handleClickForNumberChanger() {
+            window.location.replace("/RandomProjects/NumberChanger");
+        }
+
     return (
-      <RandomUserList />
+      <Fragment>
+        <div className="CardBackground">
+          <div className="CardBody" onClick={handleClickForMemeGenerator}>
+            <div className="HomeCardImage">
+              <img src={Plate1} />
+            </div>
+
+            <div className="HeadingText" >
+
+              <Box  fontWeight="fontWeightMedium"
+                    variant="h5"
+                    fontFamily="cursive"
+                    fontSize={45}
+                    >
+                  Meme Generator
+              </Box >
+            </div>
+
+          </div>
+
+          <div className="CardBody" onClick={handleClickForRandomUserFinder}>
+            <div className="HomeCardImage">
+              <img src={Plate2} />
+            </div>
+
+            <div className="HeadingText" style={{top: "68%"}} >
+
+              <Box  fontWeight="fontWeightMedium"
+                    variant="h5"
+                    fontFamily="cursive"
+                    fontSize={38}
+                    >
+                    Random User Finder
+
+              </Box >
+            </div>
+          </div>
+
+          <div className="CardBody"  onClick={handleClickForNumberChanger}>
+            <div className="HomeCardImage">
+              <img src={Plate3} />
+            </div>
+            <div className="HeadingText">
+
+              <Box  fontWeight="fontWeightMedium"
+                    variant="h5"
+                    fontFamily="cursive"
+                    fontSize={45}
+                    >
+                  Number Changer
+              </Box >
+            </div>
+          </div>
+
+          <div className="CardBody">
+            <div className="HomeCardImage">
+              <img src={Plate4} />
+            </div>
+            <div className="HeadingText" >
+
+              <Box  fontWeight="fontWeightMedium"
+                    variant="h5"
+                    fontFamily="cursive"
+                    fontSize={45}
+                    >
+
+              </Box >
+            </div>
+          </div>
+        </div>
+      </Fragment>
+      //<RandomUserList />
     )
 }
 
 export default Home
-
-

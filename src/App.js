@@ -15,12 +15,19 @@ import LogIn from "./Pages/Login/Login.js"
 import Blog from "./Pages/Blog.js";
 import About from "./Pages/About.js";
 
+
+//Random Projects
+import MemeGenerator from "./Pages/Small Projects/MemeGenerator/MemeGenerator.js"
+import NumberChanger from "./Pages/Small Projects/NumberChanger.js"
+import RandomUserList from "./Pages/RandomUsers/RandomUserList.js"
+
+
 class App extends Component {
   render(){
     return (
       <Fragment>
         <Header />
-              <Router>  
+              <Router>
                 <Switch>
                     <Route exact path="/" component={Home} />
                     <Route exact path="/Blog" component={Blog} />
@@ -28,6 +35,10 @@ class App extends Component {
                     <Route exact path="/LogIn" component={LogIn} />
                     <Route exact path="/LogInGoogle" component={GLogIn} />
                     <Route exact path="/SingUp" component={SingUp} />
+
+                    <Route exact path="/RandomProjects/MemeGenerator" component={MemeGenerator} />
+                    <Route exact path="/RandomProjects/NumberChanger" component={NumberChanger} />
+                    <Route exact path="/RandomProjects/RandomUserFinder" component={RandomUserList} />
                     <Redirect to="404" />
                 </Switch>
             </Router>
