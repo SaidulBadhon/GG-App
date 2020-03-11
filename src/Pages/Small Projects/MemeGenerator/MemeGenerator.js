@@ -1,5 +1,7 @@
 import React, {Component} from "react"
 import "./MemeGenerator.css"
+import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
 
 class MemeGenerator extends Component {
   constructor() {
@@ -53,21 +55,24 @@ class MemeGenerator extends Component {
         <h1>Meme Generator</h1>
 
         <form className="meme-form" onSubmit={this.handleSubmit}>
-          <input
+          <TextField
+          id="outlined-basic" label="Top Text" variant="outlined"
             name="topText"
             value={this.state.topText}
             onChange={this.handleChange}
             placeholder="Top Text"
           />
-
-          <input
+          <br></br>
+          <TextField
+            id="outlined-basic" label="Bottom Text" variant="outlined"
             name="bottomText"
             value={this.state.bottomText}
             onChange={this.handleChange}
             placeholder="Bottom Text"
           />
+          <br></br>
   
-          <button>Gen</button>
+          <Button color="secondary">Gen</Button>
 
         </form>
 

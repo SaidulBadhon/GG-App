@@ -20,37 +20,37 @@ class Register extends Component {
                     Register
                     </Typography>
                     <form>
-                    <div className="form-group">
-                        <div className="form-group-object-left">
+                        <div className="form-group">
+                            <div className="form-group-object-left">
 
-                            <TextField 
-                            variant="outlined"
-                            margin="normal"
-                            required
-                            fullWidth
-                            id="fastName"
-                            label="Fast Name"
-                            name="fastName"
-                            autoComplete="fastName"
-                            autoFocus/>
+                                <TextField 
+                                variant="outlined"
+                                margin="normal"
+                                required
+                                fullWidth
+                                id="fastName"
+                                label="Fast Name"
+                                name="fastName"
+                                autoComplete="fastName"
+                                autoFocus/>
+                            </div>
+
+                            <div className="form-group-object-right">
+
+                                <TextField 
+                                variant="outlined"
+                                margin="normal"
+                                required
+                                fullWidth
+                                id="lastName"
+                                label="Last Name"
+                                name="lastName"
+                                autoComplete="lastName"
+                                autoFocus/>
+                            </div>
+
                         </div>
-
-                        <div className="form-group-object-right">
-
-                            <TextField 
-                            variant="outlined"
-                            margin="normal"
-                            required
-                            fullWidth
-                            id="lastName"
-                            label="Last Name"
-                            name="lastName"
-                            autoComplete="lastName"
-                            autoFocus/>
-                         </div>
-
-                    </div>
-
+<div>
                         <TextField 
                         variant="outlined"
                         margin="normal"
@@ -99,9 +99,9 @@ class Register extends Component {
                         id="password"
                         autoComplete="current-password"
                     />
-
+</div>
                     <Button  className="form-button"
-                    style={{width: "35em"}}           
+                          
                             type="submit"
                             fullWidth
                             variant="contained"

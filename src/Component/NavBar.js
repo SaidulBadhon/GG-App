@@ -1,4 +1,5 @@
-import React, {Component} from "react"
+import "./Header.css"
+import React from "react"
 
 import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
@@ -6,6 +7,28 @@ import Tab from '@material-ui/core/Tab';
 import Button from '@material-ui/core/Button';
 
 import { BrowserRouter as Router, /*Switch, Route, Redirect,*/ Link } from "react-router-dom"
+import { green, orange } from '@material-ui/core/colors';
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+
+
+/*
+
+    <Tabs className="NavBarTabs"
+        fullWidth={true}
+        onChange={handleChange}
+        >
+        <div className="NavBarTab"><Tab className="NavBarTab" label="Home" /*component={Link} to={"/"}/></div>*/
+        //<div className="NavBarTab"><Tab className="NavBarTab" label="Blog" /*onClick={OnBlogButtonClick} /*component={Link} to={"/Blog"}*//></div>
+        //<div className="NavBarTab"><Tab className="NavBarTab" label="News" /*onClick={OnBlogButtonClick} /*component={Link} to={"/Blog"}*//></div>
+        //<div className="NavBarTab"><Tab className="NavBarTab" label="About" /*component={Link} to={"/About"}*//></div>
+        //<div className="NavBarTab"><Tab className="NavBarTab"  label="About" /*component={Link} to={"/About"}*//></div>
+        //<div className="NavBarTab"><Tab className="NavBarTab" label="Log In" /*component={Link} to={"/LogIn"}*//></div>
+        //<div className="NavBarTab"><Tab className="NavBarTab" label="Sign Up" /*component={Link} to={"/SingUp"}*//></div>
+
+        /* propos.auth ?<Tab label="LogIn" /><Tab label="Logout" /> */
+    //</Tabs>*/
+    
+
 
 function NavBar() {
 
@@ -48,20 +71,37 @@ function NavBar() {
         }
 
     }
-
+    const innerTheme = createMuiTheme({
+        palette: {
+          secondary: {
+            main: green[500],
+          },
+        },
+      });
+      
     return (
         <Router>
-            <Tabs
-                onChange={handleChange}
-                >
-                <Tab label="Home" /*component={Link} to={"/"}*//>
-                <Tab label="Blog" /*onClick={OnBlogButtonClick} /*component={Link} to={"/Blog"}*//>
-                <Tab label="About" /*component={Link} to={"/About"}*//>
-                <Tab label="Log In" /*component={Link} to={"/LogIn"}*//>
-                <Tab label="Sign Up" /*component={Link} to={"/SingUp"}*//>
+            <div className="NavBarHead">
+                <Button className="NavBarTab" onClick={() => {window.location.replace("/")}} >
+                    Home
+                </Button>
 
-                {/* propos.auth ?<Tab label="LogIn" /><Tab label="Logout" /> */}
-            </Tabs>
+                <Button className="NavBarTab" onClick={() => {window.location.replace("/Blog")}}>
+                    Blog
+                </Button>
+                
+                <Button className="NavBarTab" onClick={() => {window.location.replace("/News")}}>
+                    News
+                </Button>
+                <Button className="NavBarTab" onClick={() => {window.location.replace("/LogIn")}}>
+                    LogIn
+                </Button>
+
+                <Button className="NavBarTab" onClick={() => {window.location.replace("/SingUp")}}>
+                    SingUp
+                </Button>
+            </div> 
+
         </Router>
     )
 }

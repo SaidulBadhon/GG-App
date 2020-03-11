@@ -1,0 +1,211 @@
+.Header{
+  background-color: #3f51b5;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+
+.TitleBar .HaderTitle{
+  color: #fafafa;
+  text-shadow : 0px 4px 8px rgba(0, 0, 0, 0.2);
+ }
+.MenuIconButton{
+  color: #fafafa;
+
+}
+.NavBarHead Button{
+ color: #fafafa;
+ font-weight: 500;
+ font-size: 16px;
+}
+
+/* FOR MOBILE VIEW */
+
+.HaderTitle {
+/*  flexGrow: 1;*/
+  align-items: center;
+  width: 100%;
+  padding: 5px 35px 0px 0;  
+  margin: 0;
+}
+
+.TitleBar {
+  padding: 0;  
+  margin: 0;
+  width: 100%;  
+  align-items: center;
+}
+
+.TitleBar .MenuIconButton{
+  display: grid;
+}
+
+.NavbarMobile{
+  display: none;
+
+  padding: 0;  
+  margin: 0;
+}
+.NavbarPC{
+  display: none;
+
+  padding: 0;  
+  margin: 0;
+}
+
+
+
+
+/* THIS IS FOR TABLATE*/
+
+@media only screen and (min-width:768px){
+
+  .TitleBar .MenuIconButton{
+    display: none;
+  }
+
+  .NavbarPC{
+    display: None;
+  
+    padding: 0;  
+    margin: 0;
+  }
+
+  .NavbarMobile{
+    display: block;
+  
+    padding: 0;  
+    margin: 0;
+  }
+
+  .NavBarHead{
+    display: flex;
+
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .NavBarTabs {
+    display: grid;
+    width: 100%;
+    align-items: center;
+    
+  }
+
+  .NavBarTab {
+      width: 25%;
+      height: 64px;
+
+  }
+}
+
+
+
+/* THIS IS FOR Desktop*/
+
+@media only screen and (min-width:1280px){
+
+  .HaderTitle {
+    width: 25%;
+    margin: 0;
+  }
+
+  .TitleBar .MenuIconButton{
+    display: none;
+  }
+
+  .NavbarPC{
+    display: block;
+  
+    margin: 0;
+  }
+
+  .NavbarMobile{
+    display: None;
+  
+    padding: 0;  
+    margin: 0;
+  }
+
+  .NavBarHead{
+    display: flex;
+
+    width: 175%;
+    margin-left: 100px;
+  }
+
+  .NavBarTabs {
+    display: grid;
+    width: 100%;
+    align-items: center;
+    
+  }
+
+  .NavBarTab {
+      width: 25%;
+      height: 64px;
+
+  }
+
+
+
+
+
+/*  
+  .HaderTitle {
+    width: 25%;
+    padding-right: 3%;
+    margin: 0;
+  }
+
+  .TitleBar {
+    padding: 0;  
+    margin: 0;
+    width: 100%;  
+    align-items: right;
+  }
+
+  .TitleBar .MenuIconButton{
+    display: none;
+  }
+
+  .NavbarPC{
+    display: block;
+  
+    padding-left: 100px;      
+
+
+    width: 75%;  
+
+    margin: 0;
+  }
+
+  .NavbarMobile{
+    display: none;
+  
+    padding: 0;  
+    margin: 0;
+  }
+
+  .NavBarHead{
+    display: flex;
+    align-content: right;
+    width: 1100px;
+    justify-content: right;
+    align-items: right;
+  }
+
+  .NavBarTabs {
+    display: grid;
+    width: 100%;
+    align-items: center;
+    
+  }
+
+  .NavBarTab {
+      width: 25%;
+    height: 64px;
+
+  }*/
+}
+  
